@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>Dashboard Absensi</x-slot:title>
+    <x-slot:title>{{ $title }}</x-slot:title>
     
     <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-900 to-white p-4 relative">
         <!-- Switch Lokasi di Pojok Kanan -->

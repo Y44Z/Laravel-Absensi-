@@ -16,13 +16,13 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/riwayat', function () {
-    return view('riwayat');
+    return view('riwayat', ['title' => 'Riwayat']);
 });
 
 Route::get('/pengajuan', function () {
-    return view('pengajuan');
+    return view('pengajuan', ['title' => 'Pengajuan']);
 });
 
 Route::get('/analisis', function () {
-    return view('analisis');
+    return view('analisis', ['title' => 'Analisis']);
 });

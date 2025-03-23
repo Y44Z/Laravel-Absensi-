@@ -8,11 +8,11 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/dashboard" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
-              <a href="/absen" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Absen</a>
-              <a href="/riwayat" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Riwayat Kehadiran</a>
-              <a href="/pengajuan" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pengajuan Izin</a>
-              <a href="/analisis" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Analisis Kehadiran</a>
+              <x-nav-link href="/dashboard" :active="request ()->is ('dashboard')">Dashboard</x-nav-link>
+              <x-nav-link href="/absen" :active="request ()->is ('absen')">Absen</x-nav-link>
+              <x-nav-link href="/riwayat" :active="request ()->is ('riwayat')">Riwayat Kehadiran</x-nav-link>
+              <x-nav-link href="/pengajuan" :active="request ()->is ('pengajuan')">Pengajuan Izin</x-nav-link>
+              <x-nav-link href="/analisis" :active="request ()->is ('analisis')">Analisis Kehadiran</x-nav-link>
             </div>
           </div>
         </div>
